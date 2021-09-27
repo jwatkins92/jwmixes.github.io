@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+
+ <html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="description" content="Mixhub">
+        <meta name="author" content="James Watkins">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>JW Mixes</title>
+
+		<link rel="icon" href="icon_path" type="image/icon type">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+
+        <style type="text/css">
+
+            body {
+                padding-top: 70px;
+                font-family: Helvetica;
+            }
+
+
+            .navbar-brand {
+                font-style: italic;
+                font-weight: bold;
+                font-size: 200%;
+            }
+
+
+            #signup {
+                text-decoration: none;
+            }
+
+
+            .nav-item:hover {
+                -webkit-transform: scale(1.1);
+            }
+
+            #email-icon {
+              color: white;
+            }
+
+            #email-icon :hover {
+              -webkit-transform: scale(1.1);
+            }
+
+
+            @media(min-width:  768px) {
+                .news-input {
+                    width: 50%;
+                }
+            }
+
+
+            #headcopy2 {
+                opacity: 0;
+                animation-delay: 3s;
+                animation: fadein 2s ease-in 4s forwards;
+                max-width: 600px;
+            }
+
+
+            #headcopy1 {
+                opacity: 0;
+                animation: fadein 1s ease-in 2s forwards;
+            }
+
+
+            @keyframes fadein {
+              from {
+                opacity: 0
+              }
+              to {
+                opacity: 1
+              }
+            }
+
+
+            .fade-in {
+                opacity: 0.1;
+                transition: opacity 1s ease-in;
+            }
+
+
+            .fade-in.appear {
+                opacity: 1;
+            }
+
+                        .fade-out {
+                opacity: 1;
+                transition: opacity 1s ease-in;
+            }
+
+
+            .fade-out.appear {
+                opacity: 0.1;
+            }
+
+            #img-1 {
+              border-radius: 50%;
+              opacity: 0;
+              animation: fadein 1s ease-in 2s forwards;
+            }
+
+
+        </style>
+
+    </head>
+
+
+    <body class="bg-light">
+
+<!-- Nav -->
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+
+            <div class="container">
+
+              <div class="">
+                <a href="#" class="navbar-brand">JWMixes</a>
+              </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navmenu">
+
+                    <ul class="navbar-nav ms-auto my-2">
+
+                      <li class="nav-item mx-auto">
+
+                          <a href="#about" class="nav-link text-light">About</a>
+
+                      </li>
+
+                      <li class="nav-item mx-auto">
+
+                          <a href="#listen" class="nav-link text-light">Listen</a>
+
+                      </li>
+
+                        <li class="nav-item mx-auto">
+
+                            <a href="#pricing" class="nav-link text-light">Pricing</a>
+
+                        </li>
+
+
+
+                        <li class="nav-item mx-auto">
+
+                            <a href="#contact" class="nav-link text-light">Contact</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+<!-- Nav -->
+
+
+<!-- Head -->
+
+        <section class="bg-dark text-light p-5 pt-lg-5 text-center text-sm-start">
+
+            <div class="container">
+
+                <div class="d-sm-flex align-items-center justify-content-between">
+
+                    <div>
+
+                        <h1 id="headcopy1">Welcome to my site, my name is James.</h1>
+
+                        <p id="headcopy2" class="lead">I am a freelance remote mix engineer and I want to help you achieve the best mixes for your projects.</p>
+
+
+
+
+                    </div>
+
+                    <img id="img-1" onclick="img-1()" class="img-fluid w-25 pt-2 d-none d-md-block" src="Images/James 2.jpg">
+
+                </div>
+
+            </div>
+
+         </section>
+
+
+<!-- Head -->
+
+
+<!-- Newsletter
+
+        <section class="bg-dark text-light p-5">
+
+            <div class="container">
+
+                <div class="d-md-flex justify-content-between align-items-center">
+
+                    <h3 class="mb-3 mb-md-0">Sign up for our newsletter</h3>
+
+                    <div class="input-group news-input">
+                      <input type="text" class="form-control" placeholder="Enter email address">
+                      <button class="btn btn-warning btn-lg data-bs-toggle=" data-bs-toggle="modal" data-bs-target="#news" type="button">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+Newsletter -->
+
+
+<!-- Links -->
+
+        <section id="explore" class="p-5 bg-light mb-5">
+
+            <div class="container">
+
+                <div class="row text-center g-4 pt-5">
+
+                    <div class="col-md">
+
+                        <div class="card bg-dark text-light">
+
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+
+                                    <i class="bi bi-upload"></i>
+
+                                </div>
+
+                                <h3 class="card-title mb-3">
+
+                                Upload
+
+                                </h3>
+
+                                <p class="card-text">
+
+                                Share your files so I can access the project and evaluate where the project is, diagnose any issues and get to work!
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="card bg-dark text-light">
+
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+
+                                    <i class="bi bi-bootstrap-reboot"></i>
+
+                                </div>
+
+                                <h3 class="card-title mb-3">
+
+                                Revise
+
+                                </h3>
+
+                                <p class="card-text">
+
+                                3 free revisions to ensure that you are happy with the work provided. Satisfaction is the most important thing!
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md">
+
+                        <div class="card bg-dark text-light">
+
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+
+                                    <i class="bi bi-music-player"></i>
+
+                                </div>
+
+                                <h3 class="card-title mb-3">
+
+                                Download
+
+                                </h3>
+
+                                <p class="card-text">
+
+                                Download your full mix (a link will be provided via email) and send off for mastering or distribute if you please!
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- Links -->
+
+
+<!-- Body sections -->
+
+        <section id="about" class="p-5 bg-light fade-in">
+
+            <div class="container">
+
+                <div class="row align-items-center justify-content-between py-5">
+
+                    <div class="col-md">
+
+                        <img style="border-radius: 50%" src="Images/RJ2.jpeg" class="img-fluid d-none d-md-block">
+
+                    </div>
+
+                    <div class="col-md p-5 text-dark">
+
+                        <h2 class="fw-bold mb-5">About me</h2>
+
+                        <p class="lead">
+                        I've played in numerous bands throughout the years, but it's behind the scenes I feel really in my element.</p>
+                        <p class="lead">
+                        Whether you know exactly what you want, have a clear plan for your project, or you want a second opinion on a certain aspect, I'll tailor your project to suit your needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="listen" class="p-5 bg-dark text-light fade-in">
+
+            <div class="container">
+
+                <div class="row align-items-center justify-content-between py-5">
+
+                    <h2 class="fw-bold">Listen</h2>
+
+                    <div class="col-md-4 py-5">
+
+                        <p class="lead">
+                        Hear's some examples of my work...
+                        </p>
+
+                	</div>
+
+                    <div class="col-md-4">
+
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1111923862&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/james-watkins-mixes" title="JWMixes" target="_blank" style="color: #cccccc; text-decoration: none;">JWMixes</a> · <a href="https://soundcloud.com/james-watkins-mixes/whos-in-the-right-mix" title="The Gallery - Who&#x27;s In The Right?" target="_blank" style="color: #cccccc; text-decoration: none;">The Gallery - Who&#x27;s In The Right?</a></div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1111917328&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/james-watkins-mixes" title="JWMixes" target="_blank" style="color: #cccccc; text-decoration: none;">JWMixes</a> · <a href="https://soundcloud.com/james-watkins-mixes/traveling-light-mix" title="S Joel Norman - Traveling Light" target="_blank" style="color: #cccccc; text-decoration: none;">S Joel Norman - Traveling Light</a></div>
+
+                    </div>
+
+                    <div class="container">
+
+                        <div class="row align-items-center justify-content-between py-5">
+
+                            <div class="col-md-4 py-5">
+
+                                <p class="lead">
+                                ... And some of my original projects
+                                </p>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1131755749&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/james-watkins-mixes" title="JWMixes" target="_blank" style="color: #cccccc; text-decoration: none;">JWMixes</a> · <a href="https://soundcloud.com/james-watkins-mixes/thin-lizzy-style-track" title="Thin Lizzy style track" target="_blank" style="color: #cccccc; text-decoration: none;">Thin Lizzy style track</a></div>
+
+                              </div>
+
+                              <div class="col-md-4">
+
+                                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1131757942&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/james-watkins-mixes" title="JWMixes" target="_blank" style="color: #cccccc; text-decoration: none;">JWMixes</a> · <a href="https://soundcloud.com/james-watkins-mixes/folsom-prison-blues" title="Folsom Prison Blues" target="_blank" style="color: #cccccc; text-decoration: none;">Folsom Prison Blues</a></div>
+
+                              </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- Body sections -->
+
+
+<!-- Contact + FAQ -->
+
+<section id="pricing" class="p-5 bg-light fade-in">
+
+  <div class="container col-md-6">
+    <div class="row g-4 pb-5">
+        <div class="card border-0 bg-light">
+
+            <div class="card-body bg-light text-dark">
+                <h2 class="m-5 text-center fw-bold">Pricing</h2>
+                    <div class="accordion accordion-flush bg-dark" id="accordionFlushExample">
+
+                        <div class="accordion-item bg-dark">
+
+                            <h2 class="accordion-header text-center bg-light" id="flush-headingOne">
+
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Per song
+                            </button>
+
+                            </h2>
+
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
+                            <div class="accordion-body bg-light text-dark"><h2>£40 <h4>(3 free revisions, £10 per revision after that)</h4></h2></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-item bg-dark text-light">
+
+                            <h2 class="accordion-header" id="flush-headingTwo">
+
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">4 track EP
+                            </button>
+
+                            </h2>
+
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+
+                            <div class="accordion-body text-dark bg-light"><h2>£110</h2></div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion-item text-light">
+
+                            <h2 class="accordion-header" id="flush-headingThree">
+
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Album (8+ tracks)
+                            </button>
+
+                            </h2>
+
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+
+                            <div class="accordion-body text-dark bg-light"><h2>£300</h2></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+</section>
+
+
+
+        <section id="contact" class="p-5 fade-in bg-light">
+
+            <div class="container col-md-6">
+
+                <div class="row g-4 py-5">
+
+                        <div class="card bg-dark text-light">
+
+                            <div class="card-body text-center">
+
+                                <h2 class="m-5 fw-bold">Contact</h2>
+
+                                <div class="container">
+
+                                  <p class="lead">For any further enquiries or questions, or if you would like to set up a consultation, please feel to email me below.</p>
+
+                                </div>
+
+
+
+                                  <div class="h1 text-light mx-2">
+                                    <a class="bi bi-envelope" id="email-icon" href="mailto:jameswatkinsmixes@outlook.com"></a>
+                                  </div>
+
+                              </div>
+
+                            </div>
+
+                        </div>
+
+                </div>
+
+            </div>
+
+          </section>
+
+
+
+<!-- Contact + FAQ -->
+
+
+<!-- Footer -->
+
+<footer class="py-3 text-light bg-dark text-center position-relative">
+
+  <div class="container">
+
+    <p class="lead fw-bold"><sub>JW Mixes 2021</sub></p>
+
+    <a href="#" class="bi bi-house h2 text-light mx-2"></a>
+        <a href="https://www.facebook.com/" target="_blank" class="bi bi-facebook h2 text-light mx-2"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="bi bi-instagram h2 text-light mx-2"></a>
+        <a href="https://www.twitter.com/" target="_blank" class="bi bi-twitter h2 text-light mx-2"></a>
+
+        <p class="pt-5">
+
+        <a href="https://www.freepik.com/photos/music" style="text-decoration: none; color: white;"><sub>Music photo created by pvproductions - www.freepik.com</sub></a></p>
+
+  </div>
+
+</footer>
+
+<!-- Footer -->
+
+<!-- Modal -->
+
+
+		<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+		    <div class="modal-dialog">
+
+		        <div class="modal-content">
+
+		            <div class="modal-header">
+
+		                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+
+		                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+		            </div>
+
+		            <div class="modal-body">
+
+		                <form>
+
+		                    <div class="mb-3">
+
+		                        <label class="form-label">Email Address</label>
+
+		                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+
+		                    </div>
+
+		                    <div class="mb-3">
+
+		                        <label class="form-label">Password</label>
+
+		                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+
+		                    </div>
+
+		                    <div class="mb-3 form-check">
+		                        <input type="checkbox" class="form-check-input" id="rememberMe" />
+		                        <label class="form-check-label" for="rememberMe">Remember me</label>
+
+		                    </div>
+
+		                    <div class="modal-footer d-block">
+
+                                <p class="float-start col-md">No account yet? <a id="signup" href="#">Sign Up</a>
+                                <br>
+
+                                <a id="forgot" href="#"><sub>Forgotten password</sub></a></p>
+
+                                <button type="button" onclick="getInfo()" class="btn btn-danger float-end col-md">Submit</button>
+
+		                    </div>
+
+		                </form>
+
+		            </div>
+
+		        </div>
+
+		    </div>
+
+		</div>
+
+<!-- Modal -->
+
+<!-- Modal -->
+
+
+        <div class="modal fade" id="news" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        Check your inbox for our latest news!
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-danger float-end" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Modal -->
+
+    </body>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+
+    </script>
+
+            <script>
+
+
+            $(".navbar-collapse a").click(function () {
+                $(".navbar-collapse").collapse("hide");
+            });
+
+
+
+            const faders = document.querySelectorAll('.fade-in');
+
+            const appearOptions = {
+                threshold: 0.3,
+
+            };
+
+            const appearOnScroll = new IntersectionObserver
+            (function(
+                entries,
+                appearOnScroll
+            ) {
+                entries.forEach(entry => {
+                    if(!entry.isIntersecting) {
+                        return;
+                    }   else {
+                        entry.target.classList.add('appear');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                })
+            },
+            appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            })
+
+            function showAlert() {
+              let myText = "Oops! This isn't connected at the moment!";
+              alert (myText);
+            }
+
+            let objPeople = [
+              {
+                username: 'james_ian_watkins@outlook.com',
+                password: 'Fridaynightlights5'
+              }
+            ]
+
+            function getInfo() {
+              let username = document.getElementById('username').value;
+              let password = document.getElementById('password').value;
+
+              for(i = 0; i < objPeople.length; i++) {
+                if(username == objPeople[i].username && password == objPeople[i].password) {
+                  location.href = 'http://localhost/1/home.html'
+                }
+              }
+            }
+
+
+
+
+
+
+            </script>
+
+ </html>
